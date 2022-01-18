@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color1: #540089;
+    --color2: #C268FA;
+}
+
+* {
+    font-family: Nunito;
+}
+
+.navbar,
+.btn {
+    background-color: var(--color2) !important;
+}
+
+.container {
+    width: 60%;
+}
+
+h3, h6 {
+    color: var(--color1);
+}
+
+.footer {
+    background-color: #F0F0F0;
+    /* bottom: 0;
+    clear: both;
+    position: absolute; */
+}
+
+ol { counter-reset: item }
+li{ display: block }
+li:before { content: counters(item, ".") " "; counter-increment: item }
+
+.form-check-input{
+    transform:scale(2);
+    border: 1px solid var(--color1);
+}
+
+.unchecked{
+    border: 1px solid #FF0F00;
+}
+
+.right, .wrong, .checked{
+    opacity: 1 !important;
+    border: none;
+}
+
+.right{
+    background-color: #1DE219 !important;
+    background-image: url("images/icons/check-lg.svg") !important;
+}
+
+.wrong{
+    background-color: #FF0F00 !important;
+    background-image: url("images/icons/x-lg.svg") !important;
+}
+
+.form-check-input:checked{
+    border: none;
+}
+
+.radio-button:checked{
+    background-color: #540089 !important;
+    background-image: url("images/icons/check-lg.svg") !important;
+}
