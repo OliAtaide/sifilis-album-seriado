@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <nav class="navbar text-white">
+        <div class="container-fluid">
+            <span href="" class="navbar-text fw-bold">
+                Manifestações Dematológicas de Sífilis
+            </span>
+        </div>
+    </nav>
+    <div class="container my-5 d-flex flex-column">
+        <h3 class="fw-bold">
+            Pós-Teste
+        </h3>
+        <p>
+            Após analisar a imagem da manifestação dermatológica, selecione a qual fase da sífilis corresponde cada
+            lesão.
+        </p>
+        <form class="form mt-3 mb-5">
+        </form>
+
+        <div class="d-flex justify-content-center">
+            <button class="enviar-respostas btn px-5 text-white fw-bold">Enviar respostas</button>
+            <a href="unidade.html" class="acessar-unidade btn px-5 text-white fw-bold">Acessar Unidade</a>
+        </div>
+    </div>
+    <nav class="footer d-flex justify-content-center py-2">
+        <img src="../images/logos.png" alt="" class="img-fluid" />
+    </nav>
+</body>
+
+<script>
+    for (let i = 1; i <= 10; i++) {
+        $('.form').append(
+            `<h6 class="fw-bold mt-3">Questão ` + i + `</h6>
+        <div class="row my-2">
+            <div class="col col-12 col-md-4"><img class="img-fluid" src="../images/pos-teste/questao-` + i + `.png" alt=""></div>
+            <div class="col col-12 col-md-6 alternativas-questao-` + i + ` m-3 d-flex flex-column justify-content-center">
+                <div class="form-check my-2">
+                    <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="a" id="questao` + i + `-a">
+                        <label class="form-check-label ms-3" for="questao` + i + `-a">
+                            Manifestações Dermatológicas da Sífilis Primária
+                        </label>
+                </div>
+                <div class="form-check my-2">
+                    <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="b" id="questao` + i + `-b">
+                        <label class="form-check-label ms-3" for="questao` + i + `-b">
+                            Manifestações Dermatológicas da Sífilis Secundaria
+                        </label>
+                </div>
+                <div class="form-check my-2">
+                    <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="c" id="questao` + i + `-c">
+                        <label class="form-check-label ms-3" for="questao` + i + `-c">
+                            Manifestações Dermatológicas da Sífilis Teciária
+                        </label>
+                </div>
+            </div>
+        </div>
+        `
+        )
+    }
+
+    $(".acessar-unidade").hide();
+
+    var respostas = ["a", "c", "b", "b", "a", "a", "b", "c", "b", "c"];
+
+    var feedback = {
+        a: `Manifestações Dermatológicas da Sífilis Primária.
+        Essa fase é caracterizada ´pela presença da lesão inicial da sífilis primária que é denominada cancro duro ou protossifiloma. 
+        Surge, em média, 3 semanas após a infecção, podendo, inclusive, não aparecer ou surgir após um período maior, em torno de 40 dias.
+        Em 15% a 30% dos casos, o cancro não é percebido pelo paciente ou pode ser atípico.
+        Caracteriza-se por ser indolor, único, erosado, de fundo limpo, ou com pouca serosidade, avermelhado, com base e bordas endurecidas`,
+
+        b: `Manifestações Dermatológicas da Sífilis Secundária.
+        Essa fase é caracterizada pela disseminação de treponemas pelo organismo.
+        Na sífilis secundária as manifestações ocorrem de 4 a 8 semanas após o aparecimento do cancro duro.
+        A lesão de pele mais precoce é constituída por exantema morbiliforme não pruriginoso:
+        é a denominada roséola sifilítica, caracterizada por máculas eritematosas, portanto, sem relevo.
+        Muitas vezes, vem acompanhada de mal-estar, dores articulares, cefaleia e polimicroadenopatia, especialmente na região cervical e epitrocleana.
+        Essas lesões regridem espontaneamente devido à formação de anticorpos transitórios pelo organismo infectado, o que pode desestimular o doente a procurar o serviço médico.
+        Posteriormente, podem surgir lesões papulosas eritematosas, disseminadas pelo tronco e atingindo também a região palmoplantar.
+        Essa região, quando acometida, é de grande valor diagnóstico, sendo maior a probabilidade de se tratar de sífilis, embora não seja um sinal patognomônico.`,
+
+        c: `Manifestações Dermatológicas da Sífilis Terciária.
+        Essa fase é caracterizada por processo inflamatório importante com destruição tecidual.
+        A sífilis, considerada terciária, ocorre em doentes não tratados ou que receberam terapêutica inadequada, em 15% a 25% dos casos. 
+        As manifestações clínicas podem surgir nos primeiros 2 anos após a sífilis secundária.
+        São as chamadas lesões precoces. Também podem surgir até 40 anos após essa fase, mas, em geral, surgem entre 2 e 7 anos após o secundarismo.
+        Caracteriza-se por lesões nodulares, nódulo-ulceradas e gomas, onde raramente são encontrados treponemas.
+        As reações sorológicas, nessa fase, são reagentes.
+        As lesões de pele nodulares e nódulo-ulceradas costumam ser agrupadas, formando placas serpiginosas e policíclicas.
+        Podem ser recobertas por crostas e descamação, assumindo um aspecto psoriasiforme.
+        Nas áreas cicatriciais, podem ocorrer hiperpigmentação, hipopigmentação e atrofia.
+        As lesões gomosas caracterizam-se por nódulos que necrosam no centro, formando ulcerações destrutivas, circulares, às vezes com material necrótico aderente e que cicatrizam de 1 a 2 meses.
+        Quando a goma se localiza na região peniana, é denominada “pseudo cancro redux”; e quando se localiza sobre a cicatriz do cancro duro, é o “cancro redux”.`
+
+    }
+
+    function showFeedback() {
+        for (let i = 0; i < respostas.length; i++) {
+            var fb;
+            switch (respostas[i]) {
+                case 'a':
+                    fb = feedback.a;
+                    break;
+                case 'b':
+                    fb = feedback.b;
+                    break;
+                case 'c':
+                    fb = feedback.c;
+                    break;
+            }
+            $('.alternativas-questao-' + (i + 1)).append('<small><strong>Feedback: </strong>' + fb + '</strong>');
+        }
+    }
+
+    $(".enviar-respostas").click(function () {
+        window.scrollTo(0, 0);
+        $(this).hide();
+        $(".acessar-unidade").show();
+        $(".form-check-input").prop("disabled", true);
+        var erros = 0, acertos = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            var r = $("input[name='questao" + i + "']:checked");
+            var l = $("label[for='questao" + i + "-" + r.val() + "']");
+            l.addClass("checked");
+            r.removeClass("radio-button");
+            if (r.val() == respostas[i - 1]) {
+                r.addClass("right");
+                acertos++;
+            }
+            else {
+                if (r.val() != undefined) {
+                    r.addClass("wrong");
+                }
+                else {
+                    $("input[name='questao" + i + "']").addClass("unchecked");
+                }
+                erros++;
+                var vr = $("#questao" + i + "-" + respostas[i - 1]);
+                var vl = $("label[for='questao" + i + "-" + respostas[i - 1] + "']");
+
+                vr.addClass("right");
+                vl.addClass("checked");
+            }
+        }
+        $('.form').append(
+            `<div class="resultado mt-5">
+                <h5 class="fw-bold text-center">
+                    <span class="mx-3">Total de erros: <span class="text-danger">` + erros +`</span></span>
+                    
+                    <span class="mx-3">Total de acertos: <span class="text-success">` + acertos +`</span></span>
+                </h5>
+            </div>`
+        )
+
+        showFeedback();
+
+    });
+
+</script>
+
+</html>
