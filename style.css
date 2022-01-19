@@ -18,7 +18,7 @@
     width: 60%;
 }
 
-h3, h6 {
+h3, h4, h5, h6 {
     color: var(--color1);
 }
 
@@ -70,4 +70,12 @@ li:before { content: counters(item, ".") " "; counter-increment: item }
     .container{
         width: 90%;
     }
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+    height: 100vh;  
+}
+
+.swiper-wrapper{
+    overflow: hidden !important;
 }
