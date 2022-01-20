@@ -49,95 +49,20 @@
     </nav>
 </body>
 
+<script src="../script.js"></script>
 <script>
-    for (let i = 1; i <= 10; i++) {
-        $('.form').append(
-            `<h6 class="fw-bold mt-3">Questão ` + i + `</h6>
-        <div class="row my-2">
-            <div class="col col-12 col-md-4"><img class="img-fluid" src="../images/pre-teste/questao-` + i + `.png" alt=""></div>
-            <div class="col m-3 col-12 col-md-6 alternativas-questao-` + i + ` d-flex flex-column justify-content-center">
-                <div class="form-check my-2">
-                    <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="a" id="questao` + i + `-a">
-                        <label class="form-check-label ms-3" for="questao` + i + `-a">
-                            Manifestações Dermatológicas da Sífilis Primária
-                        </label>
-                </div>
-                <div class="form-check my-2">
-                    <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="b" id="questao` + i + `-b">
-                        <label class="form-check-label ms-3" for="questao` + i + `-b">
-                            Manifestações Dermatológicas da Sífilis Secundaria
-                        </label>
-                </div>
-                <div class="form-check my-2">
-                    <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="c" id="questao` + i + `-c">
-                        <label class="form-check-label ms-3" for="questao` + i + `-c">
-                            Manifestações Dermatológicas da Sífilis Teciária
-                        </label>
-                </div>
-            </div>
-        </div>
-        `
-        )
-    }
-
     $(".acessar-unidade").hide();
 
-    var respostas = ["a", "c", "b", "b", "a", "c", "b", "a", "b", "c"];
+    renderQuestoes('pre-teste');
 
-    function alerta(index, texto) {
-        $('.alternativas-questao-' + index).prepend(
-            '<span class="text-danger fw-bold mb-3">'
-            + texto +
-            '</span>'
-        );
-    }
+    var respostas = ["a", "c", "b", "b", "a", "c", "b", "a", "b", "c"];
+    var err_smg = "Resposta errada!";
 
     $(".enviar-respostas").click(function () {
-        window.scrollTo(0, 0);
         $(this).hide();
         $(".acessar-unidade").show();
-        $(".form-check-input").prop("disabled", true);
-        var erros = 0, acertos = 0;
-
-        for (let i = 1; i <= 10; i++) {
-            var r = $("input[name='questao" + i + "']:checked");
-            var l = $("label[for='questao" + i + "-" + r.val() + "']");
-            l.addClass("checked");
-            r.removeClass("radio-button");
-            if (r.val() == respostas[i - 1]) {
-                r.addClass("right");
-                acertos++;
-            }
-            else {
-                if (r.val() != undefined) {
-                    r.addClass("wrong");
-                    var vr = $("#questao" + i + "-" + respostas[i - 1]);
-                    var vl = $("label[for='questao" + i + "-" + respostas[i - 1] + "']");
-                    erros++;
-                    vr.addClass("right");
-                    vl.addClass("checked");
-
-                    alerta(i, "Resposta errada!");
-                }
-                else {
-                    $("input[name='questao" + i + "']").addClass("unchecked");
-                    alerta(i, "Pergunta não respondida.");
-                }
-
-            }
-            
-        }
-        $('.form').append(
-            `<div class="resultado mt-5">
-                <h5 class="fw-bold text-center">
-                    <span class="mx-3">Total de erros: <span class="text-danger">` + erros + `</span></span>
-                    
-                    <span class="mx-3">Total de acertos: <span class="text-success">` + acertos + `</span></span>
-                </h5>
-            </div>`
-        )
+        enviarRespostas(respostas, err_smg);
     });
-
 </script>
 
 </html>
