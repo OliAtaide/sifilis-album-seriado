@@ -48,7 +48,7 @@
             <a href="pos-teste.html" class="pos-teste btn px-auto px-md-5 text-white fw-bold">Repetir pós-teste</a>
             <a href="unidade.html" class="acessar-unidade btn px-auto px-md-5 text-white fw-bold">Acessar Unidade</a>
             <a href="referencias.html" class="referencias btn px-auto px-md-5 text-white fw-bold">Avançar<i
-                class="bi bi-chevron-right"></i></a>
+                    class="bi bi-chevron-right"></i></a>
         </div>
     </div>
     <nav class="footer d-flex justify-content-center py-2">
@@ -63,19 +63,19 @@
         <div class="row my-2">
             <div class="col col-12 col-md-4"><img class="img-fluid" src="../images/pos-teste/questao-` + i + `.png" alt=""></div>
             <div class="col col-12 col-md-6 alternativas-questao-` + i + ` m-3 d-flex flex-column justify-content-center">
-                <div class="form-check my-2">
+                <div class="form-check m-2">
                     <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="a" id="questao` + i + `-a">
                         <label class="form-check-label ms-3" for="questao` + i + `-a">
                             Manifestações Dermatológicas da Sífilis Primária
                         </label>
                 </div>
-                <div class="form-check my-2">
+                <div class="form-check m-2">
                     <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="b" id="questao` + i + `-b">
                         <label class="form-check-label ms-3" for="questao` + i + `-b">
                             Manifestações Dermatológicas da Sífilis Secundaria
                         </label>
                 </div>
-                <div class="form-check my-2">
+                <div class="form-check m-2">
                     <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="c" id="questao` + i + `-c">
                         <label class="form-check-label ms-3" for="questao` + i + `-c">
                             Manifestações Dermatológicas da Sífilis Teciária
@@ -143,6 +143,14 @@
         }
     }
 
+    function alerta(index, texto) {
+        $('.alternativas-questao-' + index).prepend(
+            '<span class="text-danger fw-bold mb-3">'
+                + texto +
+            '</span>'
+        );
+    }
+
     $(".enviar-respostas").click(function () {
         window.scrollTo(0, 0);
         $(this).hide();
@@ -162,26 +170,30 @@
                 acertos++;
             }
             else {
-                if (r.val() != undefined) {
+                if (
+                    r.val() != undefined) {
                     r.addClass("wrong");
+                    erros++;
+                    var vr = $("#questao" + i + "-" + respostas[i - 1]);
+                    var vl = $("label[for='questao" + i + "-" + respostas[i - 1] + "']");
+
+                    vr.addClass("right");
+                    vl.addClass("checked");
+                    
+                    alerta(i, "Opção incorreta! Que tal acessar novamente o conteúdo das unidades?");
                 }
                 else {
                     $("input[name='questao" + i + "']").addClass("unchecked");
+                    alerta(i, "Pergunta não respondida.");
                 }
-                erros++;
-                var vr = $("#questao" + i + "-" + respostas[i - 1]);
-                var vl = $("label[for='questao" + i + "-" + respostas[i - 1] + "']");
-
-                vr.addClass("right");
-                vl.addClass("checked");
             }
         }
         $('.form').append(
             `<div class="resultado mt-5">
                 <h5 class="fw-bold text-center">
-                    <span class="mx-3">Total de erros: <span class="text-danger">` + erros +`</span></span>
+                    <span class="mx-3">Total de erros: <span class="text-danger">` + erros + `</span></span>
                     
-                    <span class="mx-3">Total de acertos: <span class="text-success">` + acertos +`</span></span>
+                    <span class="mx-3">Total de acertos: <span class="text-success">` + acertos + `</span></span>
                 </h5>
             </div>`
         )
