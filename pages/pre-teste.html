@@ -53,15 +53,15 @@
 <script>
     $(".acessar-unidade").hide();
 
-    renderQuestoes('pre-teste');
+    randomQuestoes('pre-teste');
 
-    var respostas = ["a", "c", "b", "b", "a", "c", "b", "a", "b", "c"];
+    // var respostas = ["a", "c", "b", "b", "a", "c", "b", "a", "b", "c"];
     var err_smg = "Resposta errada!";
 
     $(".enviar-respostas").click(function () {
         $(this).hide();
         $(".acessar-unidade").show();
-        enviarRespostas(respostas, err_smg);
+        randomRespostas(err_smg);
     });
 </script>
 

@@ -32,9 +32,9 @@ var feedback = {
 }
 
 function showFeedback() {
-    for (let i = 0; i < respostas.length; i++) {
+    for (let i = 0; i < aleatorias.length; i++) {
         var fb;
-        switch (respostas[i]) {
+        switch (aleatorias[i].resposta) {
             case 'a':
                 fb = feedback.a;
                 break;
@@ -49,12 +49,212 @@ function showFeedback() {
     }
 }
 
-function renderQuestoes(texto) {
+function alerta(index, texto) {
+    $('.alternativas-questao-' + index).prepend(
+        '<span class="text-danger fw-bold mb-3">'
+        + texto +
+        '</span>'
+    );
+}
+
+var questoes = [
+    {
+        image: '../images/sifilis/1-1.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/1-2.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/1-3.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/1-4.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/1-5.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/1-6.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/1-7.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/1-8.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/1-9.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/1-10.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/2-1.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-2.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-3.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-4.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-5.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-6.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-7.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-8.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-9.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-10.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-11.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-12.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-13.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-14.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-15.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-16.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-17.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-18.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-19.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-20.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-21.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-22.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-23.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/2-24.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3-1.png',
+        resposta: 'c',
+    },
+    {
+        image: '../images/sifilis/3-2.png',
+        resposta: 'c',
+    },
+    {
+        image: '../images/sifilis/3-3.png',
+        resposta: 'c',
+    },
+    {
+        image: '../images/sifilis/3-4.png',
+        resposta: 'c',
+    },
+    {
+        image: '../images/sifilis/3-5.png',
+        resposta: 'c',
+    },
+    {
+        image: '../images/sifilis/3-6.png',
+        resposta: 'c',
+    },
+    {
+        image: '../images/sifilis/3-7.png',
+        resposta: 'c',
+    },
+    {
+        image: '../images/sifilis/1-8.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/3-9.png',
+        resposta: 'c',
+    },
+    {
+        image: '../images/sifilis/3-10.png',
+        resposta: 'c',
+    },
+]
+
+var aleatorias = []
+
+function getRandom() {
+    while(aleatorias.length != 10){
+        var questao = questoes[Math.floor(Math.random() * questoes.length)];
+        if (!aleatorias.includes(questao)) {
+            aleatorias.push(questao);
+        }
+    }
+    console.log(aleatorias);
+}
+
+function randomQuestoes(texto) {
+    getRandom();
     for (let i = 1; i <= 10; i++) {
         $('.form').append(
             `<h6 class="fw-bold mt-3">Questão ` + i + `</h6>
         <div class="row my-2">
-            <div class="col col-12 col-md-4"><img class="img-fluid" src="../images/` + texto + `/questao-` + i + `.png" alt=""></div>
+            <div class="col col-12 col-md-4"><img class="img-fluid" src="` + aleatorias[i-1].image + `" alt=""></div>
             <div class="col col-12 col-md-6 alternativas-questao-` + i + ` m-3 d-flex flex-column justify-content-center">
                 <div class="form-check m-2">
                     <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="a" id="questao` + i + `-a">
@@ -81,18 +281,10 @@ function renderQuestoes(texto) {
     }
 }
 
-function alerta(index, texto) {
-    $('.alternativas-questao-' + index).prepend(
-        '<span class="text-danger fw-bold mb-3">'
-            + texto +
-        '</span>'
-    );
-}
-
-function enviarRespostas(respostas, err_msg) {
+function randomRespostas(err_msg) {
     window.scrollTo(0, 0);
-    
-    
+
+
     $(".form-check-input").prop("disabled", true);
     var erros = 0, acertos = 0;
 
@@ -101,7 +293,7 @@ function enviarRespostas(respostas, err_msg) {
         var l = $("label[for='questao" + i + "-" + r.val() + "']");
         l.addClass("checked");
         r.removeClass("radio-button");
-        if (r.val() == respostas[i - 1]) {
+        if (r.val() == aleatorias[i - 1].resposta) {
             r.addClass("right");
             acertos++;
         }
@@ -110,8 +302,8 @@ function enviarRespostas(respostas, err_msg) {
                 r.val() != undefined) {
                 r.addClass("wrong");
                 erros++;
-                var vr = $("#questao" + i + "-" + respostas[i - 1]);
-                var vl = $("label[for='questao" + i + "-" + respostas[i - 1] + "']");
+                var vr = $("#questao" + i + "-" + aleatorias[i - 1].resposta);
+                var vl = $("label[for='questao" + i + "-" + aleatorias[i - 1].resposta + "']");
 
                 vr.addClass("right");
                 vl.addClass("checked");
@@ -350,7 +542,7 @@ function onChange() {
         $('.prev').show();
         $('.pre-teste').hide();
     }
-    if (swiper.realIndex == '2') {
+    if (swiper.realIndex == 'b') {
         $('.next').hide();
         $('.pos-teste').show();
     }
@@ -375,18 +567,18 @@ function imprimirUnidade() {
                 <div class="row">
                     <div class="col col-12 col-md-6">
                         <div class="d-flex justify-content-center">
-                            <img class='img-fluid justify-self-center' src="../images/unidade/` + (i + 1) + '-' + (j + 1) + `.png" alt="">
+                            <img class='img-fluid justify-self-center' src="../images/sifilis/` + (i + 1) + '-' + (j + 1) + `.png" alt="">
                         </div>
                     </div>
                     <div class="col col-12 col-md-6">
                         <div class="d-flex flex-column justify-content-center h-100">
                             `
                 + imprimirDado('DESCRIÇÃO DA LESÃO:', conteudo[i][j].descricao)
-    
+
                 + imprimirDado('DIAGNOSTICO:', conteudo[i][j].diagnostico)
-    
+
                 + imprimirDado('DIAGNOSTICO DIFERENCIAL:', conteudo[i][j].diagnostico_diferencial)
-    
+
                 + imprimirDado('FONTE:', conteudo[i][j].fonte) +
                 `
                         </div>
