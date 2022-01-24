@@ -233,7 +233,7 @@ var questoes = [
         resposta: 'c',
     },
     {
-        image: '../images/sifilis/1-8.png',
+        image: '../images/sifilis/3-8.png',
         resposta: 'a',
     },
     {
