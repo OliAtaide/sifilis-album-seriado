@@ -56,12 +56,13 @@
     randomQuestoes('pre-teste');
 
     // var respostas = ["a", "c", "b", "b", "a", "c", "b", "a", "b", "c"];
-    var err_smg = "Resposta errada!";
+    var err_msg = "Resposta errada!";
+    var ok_msg = "Resposta correta!";
 
     $(".enviar-respostas").click(function () {
         $(this).hide();
         $(".acessar-unidade").show();
-        randomRespostas(err_smg);
+        randomRespostas(err_msg, ok_msg);
     });
 </script>
 

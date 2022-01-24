@@ -49,12 +49,22 @@ function showFeedback() {
     }
 }
 
-function alerta(index, texto) {
+function alerta(index, texto, bool) {
+    var color;
+    if (bool) {
+        color = 'text-success';
+    }
+    else{
+        color = 'text-danger';
+    }
     $('.alternativas-questao-' + index).prepend(
-        '<span class="text-danger fw-bold mb-3">'
+        '<span class="'
+        + color +
+        ' fw-bold mb-3">'
         + texto +
         '</span>'
     );
+    
 }
 
 var questoes = [
@@ -245,7 +255,6 @@ function getRandom() {
             aleatorias.push(questao);
         }
     }
-    console.log(aleatorias);
 }
 
 function randomQuestoes(texto) {
@@ -281,10 +290,8 @@ function randomQuestoes(texto) {
     }
 }
 
-function randomRespostas(err_msg) {
+function randomRespostas(err_msg, ok_msg) {
     window.scrollTo(0, 0);
-
-
     $(".form-check-input").prop("disabled", true);
     var erros = 0, acertos = 0;
 
@@ -296,6 +303,7 @@ function randomRespostas(err_msg) {
         if (r.val() == aleatorias[i - 1].resposta) {
             r.addClass("right");
             acertos++;
+            alerta(i, ok_msg, true);
         }
         else {
             if (
@@ -308,11 +316,11 @@ function randomRespostas(err_msg) {
                 vr.addClass("right");
                 vl.addClass("checked");
 
-                alerta(i, err_msg);
+                alerta(i, err_msg, false);
             }
             else {
                 $("input[name='questao" + i + "']").addClass("unchecked");
-                alerta(i, "Pergunta não respondida!");
+                alerta(i, "Pergunta não respondida!", false);
             }
         }
     }
@@ -533,7 +541,6 @@ var conteudo = [
 
 function onChange() {
     window.scrollTo(0, 0);
-    console.log(swiper.realIndex)
     if (swiper.realIndex == '0') {
         $('.prev').hide();
         $('.pre-teste').show();
