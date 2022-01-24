@@ -549,7 +549,7 @@ function onChange() {
         $('.prev').show();
         $('.pre-teste').hide();
     }
-    if (swiper.realIndex == 'b') {
+    if (swiper.realIndex == '2') {
         $('.next').hide();
         $('.pos-teste').show();
     }
