@@ -31,10 +31,10 @@ var feedback = {
 
 }
 
-function showFeedback() {
-    for (let i = 0; i < aleatorias.length; i++) {
+function showFeedback(questoes) {
+    for (let i = 0; i < questoes.length; i++) {
         var fb;
-        switch (aleatorias[i].resposta) {
+        switch (questoes[i].resposta) {
             case 'a':
                 fb = feedback.a;
                 break;
@@ -246,24 +246,41 @@ var questoes = [
     },
 ]
 
-var aleatorias = []
+function preTeste() {
+    var respostas = ["a", "c", "b", "b", "a", "c", "b", "a", "b", "c"];
+    var pre_teste = [];
 
-function getRandom() {
-    while(aleatorias.length != 10){
-        var questao = questoes[Math.floor(Math.random() * questoes.length)];
-        if (!aleatorias.includes(questao)) {
-            aleatorias.push(questao);
+    respostas.forEach(r => {
+        for (let i = 0; i < questoes.length; i++) {
+            if (questoes[i].resposta == r && !pre_teste.includes(questoes[i])) {
+                pre_teste.push(questoes[i]);
+                break;
+            }
         }
-    }
+    });
+
+    return pre_teste;
 }
 
-function randomQuestoes(texto) {
-    getRandom();
+function posTeste() {
+    var pos_teste = [];
+
+    while(pos_teste.length != 10){
+        var questao = questoes[Math.floor(Math.random() * questoes.length)];
+        if (!pos_teste.includes(questao)) {
+            pos_teste.push(questao);
+        }
+    }
+
+    return pos_teste;
+}
+
+function imprimirQuestoes(lista, texto) {
     for (let i = 1; i <= 10; i++) {
         $('.form').append(
             `<h6 class="fw-bold mt-3">Questão ` + i + `</h6>
         <div class="row my-2">
-            <div class="col col-12 col-md-4"><img class="img-fluid" src="` + aleatorias[i-1].image + `" alt=""></div>
+            <div class="col col-12 col-md-4"><img class="img-fluid" src="` + lista[i-1].image + `" alt=""></div>
             <div class="col col-12 col-md-6 alternativas-questao-` + i + ` m-3 d-flex flex-column justify-content-center">
                 <div class="form-check m-2">
                     <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="a" id="questao` + i + `-a">
@@ -290,7 +307,7 @@ function randomQuestoes(texto) {
     }
 }
 
-function randomRespostas(err_msg, ok_msg) {
+function enviarRespostas(questoes, err_msg, ok_msg) {
     window.scrollTo(0, 0);
     $(".form-check-input").prop("disabled", true);
     var erros = 0, acertos = 0;
@@ -300,7 +317,7 @@ function randomRespostas(err_msg, ok_msg) {
         var l = $("label[for='questao" + i + "-" + r.val() + "']");
         l.addClass("checked");
         r.removeClass("radio-button");
-        if (r.val() == aleatorias[i - 1].resposta) {
+        if (r.val() == questoes[i - 1].resposta) {
             r.addClass("right");
             acertos++;
             alerta(i, ok_msg, true);
@@ -310,8 +327,8 @@ function randomRespostas(err_msg, ok_msg) {
                 r.val() != undefined) {
                 r.addClass("wrong");
                 erros++;
-                var vr = $("#questao" + i + "-" + aleatorias[i - 1].resposta);
-                var vl = $("label[for='questao" + i + "-" + aleatorias[i - 1].resposta + "']");
+                var vr = $("#questao" + i + "-" + questoes[i - 1].resposta);
+                var vl = $("label[for='questao" + i + "-" + questoes[i - 1].resposta + "']");
 
                 vr.addClass("right");
                 vl.addClass("checked");

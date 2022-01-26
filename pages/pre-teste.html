@@ -53,16 +53,17 @@
 <script>
     $(".acessar-unidade").hide();
 
-    randomQuestoes('pre-teste');
+    var pre_teste = preTeste();
 
-    // var respostas = ["a", "c", "b", "b", "a", "c", "b", "a", "b", "c"];
+    imprimirQuestoes(pre_teste, 'pre-teste');
+
     var err_msg = "Resposta errada!";
     var ok_msg = "Resposta correta!";
 
     $(".enviar-respostas").click(function () {
         $(this).hide();
         $(".acessar-unidade").show();
-        randomRespostas(err_msg, ok_msg);
+        enviarRespostas(pre_teste, err_msg, ok_msg);
     });
 </script>
 

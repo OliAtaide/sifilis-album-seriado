@@ -45,13 +45,13 @@
         </div>
 
         <div class="d-flex flex-column flex-sm-row justify-content-between">
-            <a href="pos-teste.html" class="pos-teste btn px-auto px-md-5 my-    text-white fw-bold">
+            <a href="pos-teste.html" class="pos-teste btn px-auto px-md-5 my-3 text-white fw-bold">
                 Repetir pós-teste
             </a>
-            <a href="unidade.html" class="acessar-unidade btn px-auto px-md-5  my-3 text-white fw-bold">
+            <a href="unidade.html" class="acessar-unidade btn px-auto px-md-5 my-3 text-white fw-bold">
                 Acessar Unidade 1
             </a>
-            <a href="referencias.html" class="referencias btn px-auto px-md-5  my-3 text-white fw-bold">
+            <a href="referencias.html" class="referencias btn px-auto px-md-5 my-3 text-white fw-bold">
                 Avançar
                 <i class="bi bi-chevron-right"></i>
             </a>
@@ -69,7 +69,9 @@
     $(".pos-teste").hide();
     $(".referencias").hide();
 
-    randomQuestoes('pos-teste');
+    var pos_teste = posTeste();
+
+    imprimirQuestoes(pos_teste, 'pos-teste');
 
     // var respostas = ["a", "c", "b", "b", "a", "a", "b", "c", "b", "c"];
     var err_msg = "Opção incorreta! Que tal acessar novamente o conteúdo das unidades?";
@@ -80,8 +82,8 @@
         $(".acessar-unidade").show();
         $(".pos-teste").show();
         $(".referencias").show();
-        randomRespostas(err_msg, ok_smg);
-        showFeedback();
+        enviarRespostas(pos_teste, err_msg, ok_smg);
+        showFeedback(pos_teste);
     });
 </script>
 
