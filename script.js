@@ -16,9 +16,9 @@ var feedback = {
     Posteriormente, podem surgir lesões papulosas eritematosas, disseminadas pelo tronco e atingindo também a região palmoplantar.
     Essa região, quando acometida, é de grande valor diagnóstico, sendo maior a probabilidade de se tratar de sífilis, embora não seja um sinal patognomônico.`,
 
-    c: `Manifestações Dermatológicas da Sífilis Terciária.
+    c: `Manifestações Dermatológicas da Sífilis Teciária.
     Essa fase é caracterizada por processo inflamatório importante com destruição tecidual.
-    A sífilis, considerada terciária, ocorre em doentes não tratados ou que receberam terapêutica inadequada, em 15% a 25% dos casos. 
+    A sífilis, considerada teciária, ocorre em doentes não tratados ou que receberam terapêutica inadequada, em 15% a 25% dos casos. 
     As manifestações clínicas podem surgir nos primeiros 2 anos após a sífilis secundária.
     São as chamadas lesões precoces. Também podem surgir até 40 anos após essa fase, mas, em geral, surgem entre 2 e 7 anos após o secundarismo.
     Caracteriza-se por lesões nodulares, nódulo-ulceradas e gomas, onde raramente são encontrados treponemas.
