@@ -307,6 +307,8 @@ function imprimirQuestoes(lista, texto) {
     }
 }
 
+var respondeuTodas = true;
+
 function enviarRespostas(questoes, err_msg, ok_msg) {
     window.scrollTo(0, 0);
     $(".form-check-input").prop("disabled", true);
@@ -336,6 +338,7 @@ function enviarRespostas(questoes, err_msg, ok_msg) {
                 alerta(i, err_msg, false);
             }
             else {
+                respondeuTodas = false;
                 $("input[name='questao" + i + "']").addClass("unchecked");
                 alerta(i, "Pergunta não respondida!", false);
             }
