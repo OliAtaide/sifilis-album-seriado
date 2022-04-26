@@ -1,7 +1,7 @@
 // Pré-Teste e Pós-Teste
 var feedback = {
     a: `Manifestações Dermatológicas da Sífilis Primária.
-    Essa fase é caracterizada ´pela presença da lesão inicial da sífilis primária que é denominada cancro duro ou protossifiloma. 
+    Essa fase é caracterizada pela presença da lesão inicial da sífilis primária que é denominada cancro duro ou protossifiloma. 
     Surge, em média, 3 semanas após a infecção, podendo, inclusive, não aparecer ou surgir após um período maior, em torno de 40 dias.
     Em 15% a 30% dos casos, o cancro não é percebido pelo paciente ou pode ser atípico.
     Caracteriza-se por ser indolor, único, erosado, de fundo limpo, ou com pouca serosidade, avermelhado, com base e bordas endurecidas`,
@@ -267,7 +267,7 @@ function posTeste() {
 
     while(pos_teste.length != 10){
         var questao = questoes[Math.floor(Math.random() * questoes.length)];
-        if (!pos_teste.includes(questao)) {
+        if (!pos_teste.includes(questao) && questao != questao[37]) {
             pos_teste.push(questao);
         }
     }
@@ -384,6 +384,10 @@ var conteudo = [
             fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
         },
         {
+            descricao: 'Úlcera com aspecto serpiginoso, indolor, bordas bem delimitadas e eritematosas, formando um trajeto serpiginoso, em mucosa labial superior esquerda.',
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+        },
+        {
             descricao: `a)	Úlcera com fundo amarelado, indolor, borda irregular, localizada no frênulo prepucial, com edema circundando a lesão. (Cancro duro - Sífilis)<br/>
                     b)	Presença de pequenas úlceras e vesículas dolorosas, eritematosas, disseminadas na glande. (Herpes Genital)<br/>
                     c)	Secreção esbranquiçada em orifício peniano. (Uretrite gonocócica)`,
@@ -416,7 +420,7 @@ var conteudo = [
             fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
         },
         {
-            descricao: 'Maculopapulas eritematosas em região palmoplantar.',
+            descricao: 'Maculopápulas eritematosas em região palmoplantar.',
             fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
         },
         {
@@ -504,15 +508,15 @@ var conteudo = [
     [
 
         {
-            descricao: 'Múltiplas pápulas de coloração eritêmato-violácea, muitas coalescendo, deixando um aspecto “infiltrado” na face da paciente. É importante notar que as roséolas sifilíticas ou nódulos sifilíticos podem adquirir uma coloração mais arroxeada em peles mais escuras.',
-            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=7086">http://www.atlasdermatologico.com.br/img?imageId=7086</a>'
+            descricao: 'Presença de placas infiltradas, com ulceração e material sero-purulento ao centro.',
+            fonte: '<a href="http://atlasdermatologico.com.br/img?imageId=7086">http://atlasdermatologico.com.br/img?imageId=7086</a>'
         },
         {
             descricao: 'Presença de perfuração (fístula) em palato duro, indolor, com leve eritema perilesional.',
             fonte: '<a href="http://www.tti.library.tcu.edu.tw/DERMATOLOGY/ba/ba0057f.htm">http://www.tti.library.tcu.edu.tw/DERMATOLOGY/ba/ba0057f.htm</a>'
         },
         {
-            descricao: 'Presença de grande perfuração (fístula), indolor, x em palato duro.',
+            descricao: 'Presença de grande perfuração (fístula), indolor, em palato duro.',
             fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
         },
         {
