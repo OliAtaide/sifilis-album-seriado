@@ -220,30 +220,6 @@ var questoes = [
         image: '../images/sifilis/3-4.png',
         resposta: 'c',
     },
-    {
-        image: '../images/sifilis/3-5.png',
-        resposta: 'c',
-    },
-    {
-        image: '../images/sifilis/3-6.png',
-        resposta: 'c',
-    },
-    {
-        image: '../images/sifilis/3-7.png',
-        resposta: 'c',
-    },
-    {
-        image: '../images/sifilis/3-8.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/sifilis/3-9.png',
-        resposta: 'c',
-    },
-    {
-        image: '../images/sifilis/3-10.png',
-        resposta: 'c',
-    },
 ]
 
 function preTeste() {
@@ -267,7 +243,7 @@ function posTeste() {
 
     while(pos_teste.length != 10){
         var questao = questoes[Math.floor(Math.random() * questoes.length)];
-        if (!pos_teste.includes(questao) && questao != questao[37]) {
+        if (!pos_teste.includes(questao)) {
             pos_teste.push(questao);
         }
     }
@@ -523,6 +499,9 @@ var conteudo = [
             descricao: 'Placas ulceradas, com bordas bem elevadas e infiltradas, com presença de secreção em seu interior, decorrente da intensa reação inflamatória e necrose tecidual.',
             fonte: '<a href="http://atlasdermatologico.com.br/img?imageId=7085">http://atlasdermatologico.com.br/img?imageId=7085</a>'
         },
+    ],
+    [
+        
         {
             descricao: 'Erupção papuloescamosa eritematosa, com lesões ovaladas e descamação fina central disseminadas no tronco.',
             diagnostico: 'Pitiríase Rósea',
@@ -603,15 +582,15 @@ function imprimirUnidade() {
                     </div>
                     <div class="col col-12 col-md-6">
                         <div class="d-flex flex-column justify-content-center h-100">
-                            `
-                + imprimirDado('DESCRIÇÃO DA LESÃO:', conteudo[i][j].descricao)
+                        `
+                        + imprimirDado('DESCRIÇÃO DA LESÃO:', conteudo[i][j].descricao)
 
-                + imprimirDado('DIAGNOSTICO:', conteudo[i][j].diagnostico)
+                        + imprimirDado('DIAGNOSTICO:', conteudo[i][j].diagnostico)
 
-                + imprimirDado('DIAGNOSTICO DIFERENCIAL:', conteudo[i][j].diagnostico_diferencial)
+                        + imprimirDado('DIAGNOSTICO DIFERENCIAL:', conteudo[i][j].diagnostico_diferencial)
 
-                + imprimirDado('FONTE:', conteudo[i][j].fonte) +
-                `
+                        + imprimirDado('FONTE:', conteudo[i][j].fonte) +
+                        `
                         </div>
                     </div>
                 </div>
