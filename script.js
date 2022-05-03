@@ -238,11 +238,166 @@ function preTeste() {
     return pre_teste;
 }
 
+var questoes_pos = [
+    {
+        image: '../images/pos-teste/3.1__01.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/pos-teste/3.1__02.jpeg',
+        resposta: 'a',
+    },
+    {
+        image: '../images/pos-teste/3.1__03.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/pos-teste/3.1__04.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/pos-teste/3.1__05.jpeg',
+        resposta: 'a',
+    },
+    {
+        image: '../images/pos-teste/3.1__06.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/pos-teste/3.1__07.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/pos-teste/3.1__08.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/pos-teste/3.1__09.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/pos-teste/3.1__10.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/pos-teste/3.2__01.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__02.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__03.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__04.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__05.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__06.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__07.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__08.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__09.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__10.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__11.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__12.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__13.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__14.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__15.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__16.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__17.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__18.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__19.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__20.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__21.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__22.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__23.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.2__24.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/pos-teste/3.3__1.png',
+        resposta: 'c',
+    },
+    {
+        image: '../images/pos-teste/3.3__2.png',
+        resposta: 'c',
+    },
+    {
+        image: '../images/pos-teste/3.3__3.jpeg',
+        resposta: 'c',
+    },
+    {
+        image: '../images/pos-teste/3.3__4.png',
+        resposta: 'c',
+    },
+]
+
 function posTeste() {
     var pos_teste = [];
 
     while(pos_teste.length != 10){
-        var questao = questoes[Math.floor(Math.random() * questoes.length)];
+        var questao = questoes_pos[Math.floor(Math.random() * questoes_pos.length)];
         if (!pos_teste.includes(questao)) {
             pos_teste.push(questao);
         }
