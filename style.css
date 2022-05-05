@@ -83,4 +83,18 @@ li:before { content: counters(item, ".") " "; counter-increment: item }
     overflow: hidden !important;
 }
 
+img{
+    cursor: pointer;
+}
 
+.pic{
+    position: relative;
+}
+
+.pic-desc{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 320px;
+    z-index: 100;
+}

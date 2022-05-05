@@ -31,462 +31,6 @@ var feedback = {
 
 }
 
-function showFeedback(questoes) {
-    for (let i = 0; i < questoes.length; i++) {
-        var fb;
-        switch (questoes[i].resposta) {
-            case 'a':
-                fb = feedback.a;
-                break;
-            case 'b':
-                fb = feedback.b;
-                break;
-            case 'c':
-                fb = feedback.c;
-                break;
-        }
-        $('.alternativas-questao-' + (i + 1)).append('<span class="mt-3"><small><strong>Feedback: </strong>' + fb + '</strong></span>');
-    }
-}
-
-function alerta(index, texto, bool) {
-    var color;
-    if (bool) {
-        color = 'text-success';
-    }
-    else{
-        color = 'text-danger';
-    }
-    $('.alternativas-questao-' + index).prepend(
-        '<span class="'
-        + color +
-        ' fw-bold mb-3">'
-        + texto +
-        '</span>'
-    );
-    
-}
-
-var questoes = [
-    {
-        image: '../images/sifilis/1-1.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/sifilis/1-2.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/sifilis/1-3.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/sifilis/1-4.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/sifilis/1-5.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/sifilis/1-6.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/sifilis/1-7.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/sifilis/1-8.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/sifilis/1-9.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/sifilis/1-10.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/sifilis/2-1.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-2.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-3.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-4.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-5.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-6.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-7.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-8.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-9.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-10.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-11.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-12.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-13.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-14.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-15.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-16.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-17.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-18.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-19.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-20.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-21.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-22.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-23.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/2-24.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/sifilis/3-1.png',
-        resposta: 'c',
-    },
-    {
-        image: '../images/sifilis/3-2.png',
-        resposta: 'c',
-    },
-    {
-        image: '../images/sifilis/3-3.png',
-        resposta: 'c',
-    },
-    {
-        image: '../images/sifilis/3-4.png',
-        resposta: 'c',
-    },
-]
-
-function preTeste() {
-    var respostas = ["a", "c", "b", "b", "a", "c", "b", "a", "b", "c"];
-    var pre_teste = [];
-
-    respostas.forEach(r => {
-        for (let i = 0; i < questoes.length; i++) {
-            if (questoes[i].resposta == r && !pre_teste.includes(questoes[i])) {
-                pre_teste.push(questoes[i]);
-                break;
-            }
-        }
-    });
-
-    return pre_teste;
-}
-
-var questoes_pos = [
-    {
-        image: '../images/pos-teste/3.1__01.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/pos-teste/3.1__02.jpeg',
-        resposta: 'a',
-    },
-    {
-        image: '../images/pos-teste/3.1__03.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/pos-teste/3.1__04.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/pos-teste/3.1__05.jpeg',
-        resposta: 'a',
-    },
-    {
-        image: '../images/pos-teste/3.1__06.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/pos-teste/3.1__07.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/pos-teste/3.1__08.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/pos-teste/3.1__09.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/pos-teste/3.1__10.png',
-        resposta: 'a',
-    },
-    {
-        image: '../images/pos-teste/3.2__01.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__02.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__03.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__04.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__05.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__06.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__07.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__08.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__09.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__10.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__11.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__12.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__13.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__14.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__15.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__16.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__17.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__18.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__19.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__20.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__21.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__22.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__23.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.2__24.png',
-        resposta: 'b',
-    },
-    {
-        image: '../images/pos-teste/3.3__1.png',
-        resposta: 'c',
-    },
-    {
-        image: '../images/pos-teste/3.3__2.png',
-        resposta: 'c',
-    },
-    {
-        image: '../images/pos-teste/3.3__3.jpeg',
-        resposta: 'c',
-    },
-    {
-        image: '../images/pos-teste/3.3__4.png',
-        resposta: 'c',
-    },
-]
-
-function posTeste() {
-    var pos_teste = [];
-
-    while(pos_teste.length != 10){
-        var questao = questoes_pos[Math.floor(Math.random() * questoes_pos.length)];
-        if (!pos_teste.includes(questao)) {
-            pos_teste.push(questao);
-        }
-    }
-
-    return pos_teste;
-}
-
-function imprimirQuestoes(lista, texto) {
-    for (let i = 1; i <= 10; i++) {
-        $('.form').append(
-            `<h6 class="fw-bold mt-3">Questão ` + i + `</h6>
-        <div class="row my-2">
-            <div class="col col-12 col-md-4"><img class="img-fluid" src="` + lista[i-1].image + `" alt=""></div>
-            <div class="col col-12 col-md-6 alternativas-questao-` + i + ` m-3 d-flex flex-column justify-content-center">
-                <div class="form-check m-2">
-                    <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="a" id="questao` + i + `-a">
-                        <label class="form-check-label ms-3" for="questao` + i + `-a">
-                            Manifestações Dermatológicas da Sífilis Primária
-                        </label>
-                </div>
-                <div class="form-check m-2">
-                    <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="b" id="questao` + i + `-b">
-                        <label class="form-check-label ms-3" for="questao` + i + `-b">
-                            Manifestações Dermatológicas da Sífilis Secundaria
-                        </label>
-                </div>
-                <div class="form-check m-2">
-                    <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="c" id="questao` + i + `-c">
-                        <label class="form-check-label ms-3" for="questao` + i + `-c">
-                            Manifestações Dermatológicas da Sífilis Terciária
-                        </label>
-                </div>
-            </div>
-        </div>
-        `
-        )
-    }
-}
-
-var respondeuTodas = true;
-
-function enviarRespostas(questoes, err_msg, ok_msg) {
-    window.scrollTo(0, 0);
-    $(".form-check-input").prop("disabled", true);
-    var erros = 0, acertos = 0;
-
-    for (let i = 1; i <= 10; i++) {
-        var r = $("input[name='questao" + i + "']:checked");
-        var l = $("label[for='questao" + i + "-" + r.val() + "']");
-        l.addClass("checked");
-        r.removeClass("radio-button");
-        if (r.val() == questoes[i - 1].resposta) {
-            r.addClass("right");
-            acertos++;
-            alerta(i, ok_msg, true);
-        }
-        else {
-            if (
-                r.val() != undefined) {
-                r.addClass("wrong");
-                erros++;
-                var vr = $("#questao" + i + "-" + questoes[i - 1].resposta);
-                var vl = $("label[for='questao" + i + "-" + questoes[i - 1].resposta + "']");
-
-                vr.addClass("right");
-                vl.addClass("checked");
-
-                alerta(i, err_msg, false);
-            }
-            else {
-                respondeuTodas = false;
-                $("input[name='questao" + i + "']").addClass("unchecked");
-                alerta(i, "Pergunta não respondida!", false);
-            }
-        }
-    }
-    $('.form').append(
-        `<div class="resultado mt-5">
-            <h5 class="fw-bold text-center">
-                <span class="mx-3">Total de erros: <span class="text-danger">` + erros + `</span></span>   
-                <span class="mx-3">Total de acertos: <span class="text-success">` + acertos + `</span></span>
-            </h5>
-        </div>`
-    )
-}
-
-// Unidade
-
 var conteudo = [
     [
         {
@@ -656,7 +200,7 @@ var conteudo = [
         },
     ],
     [
-        
+
         {
             descricao: 'Erupção papuloescamosa eritematosa, com lesões ovaladas e descamação fina central disseminadas no tronco.',
             diagnostico: 'Pitiríase Rósea',
@@ -672,7 +216,7 @@ var conteudo = [
         },
         {
             descricao: 'Úlceras de bordas eritematosas e bem delimitadas em região vulvar.',
-            diagnostico: 'Herpes Simplex',
+            diagnostico: 'Herpes Simples',
             diagnostico_diferencial: 'Na Herpes, as úlceras são precedidas por lesões vesiculosas e geralmente recorrentes ',
             fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=2580">http://www.atlasdermatologico.com.br/img?imageId=2580</a>'
         },
@@ -697,6 +241,346 @@ var conteudo = [
     ]
 ]
 
+var questoes = [
+    {
+        image: '../images/sifilis/3.1__01.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/3.1__02.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/3.1__03.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/3.1__04.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/3.1__05.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/3.1__06.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/3.1__07.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/3.1__08.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/3.1__09.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/3.1__10.png',
+        resposta: 'a',
+    },
+    {
+        image: '../images/sifilis/3.2__01.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__02.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__03.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__04.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__05.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__06.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__07.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__08.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__09.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__10.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__11.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__12.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__13.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__14.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__15.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__16.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__17.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__18.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__19.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__20.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__21.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__22.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__23.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.2__24.png',
+        resposta: 'b',
+    },
+    {
+        image: '../images/sifilis/3.3__01.png',
+        resposta: 'c',
+    },
+    {
+        image: '../images/sifilis/3.3__02.png',
+        resposta: 'c',
+    },
+    {
+        image: '../images/sifilis/3.3__03.png',
+        resposta: 'c',
+    },
+    {
+        image: '../images/sifilis/3.3__04.png',
+        resposta: 'c',
+    },
+]
+
+function showFeedback(questoes) {
+    for (let i = 0; i < questoes.length; i++) {
+        var fb;
+        switch (questoes[i].resposta) {
+            case 'a':
+                fb = feedback.a;
+                break;
+            case 'b':
+                fb = feedback.b;
+                break;
+            case 'c':
+                fb = feedback.c;
+                break;
+        }
+        $('.alternativas-questao-' + (i + 1)).append('<span class="mt-3"><small><strong>Feedback: </strong>' + fb + '</strong></span>');
+    }
+}
+
+function alerta(index, texto, bool) {
+    var color;
+    if (bool) {
+        color = 'text-success';
+    }
+    else {
+        color = 'text-danger';
+    }
+    $('.alternativas-questao-' + index).prepend(
+        '<span class="'
+        + color +
+        ' fw-bold mb-3">'
+        + texto +
+        '</span>'
+    );
+
+}
+
+
+function preTeste() {
+    var respostas = ["a", "c", "b", "b", "a", "c", "b", "a", "b", "c"];
+    var pre_teste = [];
+
+    respostas.forEach(r => {
+        for (let i = 0; i < questoes.length; i++) {
+            if (questoes[i].resposta == r && !pre_teste.includes(questoes[i])) {
+                pre_teste.push(questoes[i]);
+                break;
+            }
+        }
+    });
+
+    return pre_teste;
+}
+
+function posTeste() {
+    var pos_teste = [];
+
+    while (pos_teste.length != 10) {
+        var questao = questoes[Math.floor(Math.random() * questoes.length)];
+        if (!pos_teste.includes(questao)) {
+            pos_teste.push(questao);
+        }
+    }
+
+    return pos_teste;
+}
+
+function imprimirQuestoes(lista, texto) {
+    var l = 0;
+    for (let i = 1; i <= 10; i++) {
+        var j;
+        switch (lista[i - 1].resposta) {
+            case 'a':
+                j = 0;
+                break;
+            case 'b':
+                j = 1;
+            case 'c':
+                j = 2;
+        }
+        if (conteudo[j][l] == undefined) {
+            j = 0;
+        }
+        $('.form').append(
+            `<h6 class="fw-bold mt-3">Questão ` + i + `</h6>
+            <div class="row my-2">
+            <div class="col col-12 col-md-4">
+                <div class="pic">
+                    <img class="img-fluid" src="` + lista[i - 1].image + `" alt=""  data-toast="desc-` + i + `">
+                    <div class="toast pic-desc desc-`+ i + `" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <strong class="me-auto"></strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="desc-`+ i + `" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                        `
+            + imprimirDado('DESCRIÇÃO DA LESÃO:', conteudo[j][l].descricao)
+
+            + imprimirDado('DIAGNOSTICO:', conteudo[j][l].diagnostico)
+
+            + imprimirDado('DIAGNOSTICO DIFERENCIAL:', conteudo[j][l].diagnostico_diferencial)
+
+            + imprimirDado('FONTE:', conteudo[j][l].fonte) +
+
+            `
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-12 col-md-6 alternativas-questao-` + i + ` m-3 d-flex flex-column justify-content-center">
+                <div class="form-check m-2">
+                    <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="a" id="questao` + i + `-a">
+                        <label class="form-check-label ms-3" for="questao` + i + `-a">
+                            Manifestações Dermatológicas da Sífilis Primária
+                        </label>
+                </div>
+                <div class="form-check m-2">
+                    <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="b" id="questao` + i + `-b">
+                        <label class="form-check-label ms-3" for="questao` + i + `-b">
+                            Manifestações Dermatológicas da Sífilis Secundária
+                        </label>
+                </div>
+                <div class="form-check m-2">
+                    <input class="radio-button form-check-input" type="radio" name="questao` + i + `" value="c" id="questao` + i + `-c">
+                        <label class="form-check-label ms-3" for="questao` + i + `-c">
+                            Manifestações Dermatológicas da Sífilis Terciária
+                        </label>
+                </div>
+            </div>
+        </div>
+        `
+        )
+        l++;
+    }
+}
+
+var respondeuTodas = true;
+
+function enviarRespostas(questoes, err_msg, ok_msg) {
+    window.scrollTo(0, 0);
+    $(".form-check-input").prop("disabled", true);
+    var erros = 0, acertos = 0;
+
+    for (let i = 1; i <= 10; i++) {
+        var r = $("input[name='questao" + i + "']:checked");
+        var l = $("label[for='questao" + i + "-" + r.val() + "']");
+        l.addClass("checked");
+        r.removeClass("radio-button");
+        if (r.val() == questoes[i - 1].resposta) {
+            r.addClass("right");
+            acertos++;
+            alerta(i, ok_msg, true);
+        }
+        else {
+            if (
+                r.val() != undefined) {
+                r.addClass("wrong");
+                erros++;
+                var vr = $("#questao" + i + "-" + questoes[i - 1].resposta);
+                var vl = $("label[for='questao" + i + "-" + questoes[i - 1].resposta + "']");
+
+                vr.addClass("right");
+                vl.addClass("checked");
+
+                alerta(i, err_msg, false);
+            }
+            else {
+                respondeuTodas = false;
+                $("input[name='questao" + i + "']").addClass("unchecked");
+                alerta(i, "Pergunta não respondida!", false);
+            }
+        }
+    }
+    $('.form').append(
+        `<div class="resultado mt-5">
+            <h5 class="fw-bold text-center">
+                <span class="mx-3">Total de erros: <span class="text-danger">` + erros + `</span></span>   
+                <span class="mx-3">Total de acertos: <span class="text-success">` + acertos + `</span></span>
+            </h5>
+        </div>`
+    )
+}
+
+// Unidade
+
+
 function onChange() {
     window.scrollTo(0, 0);
     if (swiper.realIndex == '0') {
@@ -707,7 +591,7 @@ function onChange() {
         $('.prev').show();
         $('.pre-teste').hide();
     }
-    if (swiper.realIndex == '2') {
+    if (swiper.realIndex == '3') {
         $('.next').hide();
         $('.pos-teste').show();
     }
@@ -719,12 +603,17 @@ function onChange() {
 
 function imprimirDado(titulo, texto) {
     if (texto != null) {
-        return '</p><p><strong>' + titulo + '</strong><br />' + texto + '</p>'
+        return '<p><strong>' + titulo + '</strong><br />' + texto + '</p>'
     }
     return "";
 }
 
+function format(num) {
+    return ("0" + num).slice(-2);
+}
+
 function imprimirUnidade() {
+    console.log(conteudo);
     for (let i = 0; i < conteudo.length; i++) {
         for (let j = 0; j < conteudo[i].length; j++) {
             $('.slide-' + (i + 1)).append(
@@ -732,20 +621,20 @@ function imprimirUnidade() {
                 <div class="row">
                     <div class="col col-12 col-md-6">
                         <div class="d-flex justify-content-center">
-                            <img class='img-fluid justify-self-center' src="../images/sifilis/` + (i + 1) + '-' + (j + 1) + `.png" alt="">
+                            <img class='img-fluid justify-self-center' src="../images/sifilis/3.` + (i + 1) + '__' + (format(j + 1)) + `.png" alt="">
                         </div>
                     </div>
                     <div class="col col-12 col-md-6">
                         <div class="d-flex flex-column justify-content-center h-100">
                         `
-                        + imprimirDado('DESCRIÇÃO DA LESÃO:', conteudo[i][j].descricao)
+                + imprimirDado('DESCRIÇÃO DA LESÃO:', conteudo[i][j].descricao)
 
-                        + imprimirDado('DIAGNOSTICO:', conteudo[i][j].diagnostico)
+                + imprimirDado('DIAGNOSTICO:', conteudo[i][j].diagnostico)
 
-                        + imprimirDado('DIAGNOSTICO DIFERENCIAL:', conteudo[i][j].diagnostico_diferencial)
+                + imprimirDado('DIAGNOSTICO DIFERENCIAL:', conteudo[i][j].diagnostico_diferencial)
 
-                        + imprimirDado('FONTE:', conteudo[i][j].fonte) +
-                        `
+                + imprimirDado('FONTE:', conteudo[i][j].fonte) +
+                `
                         </div>
                     </div>
                 </div>
@@ -754,3 +643,29 @@ function imprimirUnidade() {
         }
     }
 }
+
+
+// $('.pic img').click(function () {
+//     console.log('SUCCESS');
+//     var toast = $(this).data('toast');
+//     console.log(toast);
+//     $('.' + toast).fadeIn();
+// })
+
+// $('.btn-close').click(function () {
+//     var dismiss = $(this).data('bs-dismiss');
+//     $('.' + dismiss).fadeOut();
+// })
+
+$(document).on('click', '.pic img', function () {
+    $('.pic-desc').fadeOut();
+    console.log('SUCCESS');
+    var toast = $(this).data('toast');
+    console.log(toast);
+    $('.' + toast).fadeIn();
+})
+
+$(document).on('click', '.btn-close', function () {
+    var dismiss = $(this).data('bs-dismiss');
+    $('.' + dismiss).fadeOut();
+})
