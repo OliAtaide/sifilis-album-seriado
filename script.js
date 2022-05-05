@@ -1,4 +1,3 @@
-// Pré-Teste e Pós-Teste
 var feedback = {
     a: `Manifestações Dermatológicas da Sífilis Primária.
     Essa fase é caracterizada pela presença da lesão inicial da sífilis primária que é denominada cancro duro ou protossifiloma. 
@@ -396,6 +395,8 @@ var questoes = [
     },
 ]
 
+var respondeuTodas = true;
+
 function showFeedback(questoes) {
     for (let i = 0; i < questoes.length; i++) {
         var fb;
@@ -431,7 +432,6 @@ function alerta(index, texto, bool) {
     );
 
 }
-
 
 function preTeste() {
     var respostas = ["a", "c", "b", "b", "a", "c", "b", "a", "b", "c"];
@@ -531,7 +531,6 @@ function imprimirQuestoes(lista, texto) {
     }
 }
 
-var respondeuTodas = true;
 
 function enviarRespostas(questoes, err_msg, ok_msg) {
     window.scrollTo(0, 0);
@@ -577,9 +576,6 @@ function enviarRespostas(questoes, err_msg, ok_msg) {
         </div>`
     )
 }
-
-// Unidade
-
 
 function onChange() {
     window.scrollTo(0, 0);
@@ -643,19 +639,6 @@ function imprimirUnidade() {
         }
     }
 }
-
-
-// $('.pic img').click(function () {
-//     console.log('SUCCESS');
-//     var toast = $(this).data('toast');
-//     console.log(toast);
-//     $('.' + toast).fadeIn();
-// })
-
-// $('.btn-close').click(function () {
-//     var dismiss = $(this).data('bs-dismiss');
-//     $('.' + dismiss).fadeOut();
-// })
 
 $(document).on('click', '.pic img', function () {
     $('.pic-desc').fadeOut();

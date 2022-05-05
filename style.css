@@ -27,9 +27,6 @@ h3, h4, h5, h6 {
 
 .footer {
     background-color: #F0F0F0;
-    /* bottom: 0;
-    clear: both;
-    position: absolute; */
 }
 
 ol { counter-reset: item }
