@@ -463,21 +463,11 @@ function posTeste() {
 }
 
 function imprimirQuestoes(lista, texto) {
-    var l = 0;
     for (let i = 1; i <= 10; i++) {
-        var j;
-        switch (lista[i - 1].resposta) {
-            case 'a':
-                j = 0;
-                break;
-            case 'b':
-                j = 1;
-            case 'c':
-                j = 2;
-        }
-        if (conteudo[j][l] == undefined) {
-            j = 0;
-        }
+        var s = lista[i-1].image.split('__');
+        var j = parseInt(s[0].split('.').slice(-1)[0]) -1;
+        var l = parseInt(s[1].split('.')[0]) -1;
+        
         $('.form').append(
             `<h6 class="fw-bold mt-3">Questão ` + i + `</h6>
             <div class="row my-2">
@@ -527,7 +517,6 @@ function imprimirQuestoes(lista, texto) {
         </div>
         `
         )
-        l++;
     }
 }
 
