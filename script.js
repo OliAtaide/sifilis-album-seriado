@@ -34,101 +34,101 @@ var conteudo = [
     [
         {
             descricao: 'Úlcera indolor, com bordas elevadas e bem delimitadas, fundo eritematoso, localizada no pênis.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Úlcera indolor, com bordas elevadas e bem delimitadas, não secretiva (“aspecto limpo”), no corpo do pênis. Nota-se presença de área avermelhada ao seu redor.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Úlcera indolor, de bordas elevadas e bem delimitadas, não-secretiva, localizada na região de grande lábio direito.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Úlcera eritematosa, indolor, com borda endurecida, em falange distal do segundo quirodáctilo de mão direita.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: `a)	Úlcera indolor, com bordas elevadas, sem secreção, próxima à glande.<br/>
                     b)	Presença concomitante de vesículas dolorosas agrupadas, avermelhadas, localizadas na borda da glande. (Herpes genital)`,
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Úlcera bem delimitada, indolor, rodeada por área eritematosa, de fundo amarelado, localizada em mucosa labial superior.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Úlcera com aspecto serpiginoso, indolor, bordas bem delimitadas e eritematosas, formando um trajeto serpiginoso, em mucosa labial superior esquerda.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: `a)	Úlcera com fundo amarelado, indolor, borda irregular, localizada no frênulo prepucial, com edema circundando a lesão. (Cancro duro - Sífilis)<br/>
                     b)	Presença de pequenas úlceras e vesículas dolorosas, eritematosas, disseminadas na glande. (Herpes Genital)<br/>
                     c)	Secreção esbranquiçada em orifício peniano. (Uretrite gonocócica)`,
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Úlcera crateriforme, indolor, com bordas elevadas e esbranquiçadas, com fundo limpo, na região lateral esquerda da língua.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Presença de úlcera limpa, indolor, bem delimitada, com bordas esbranquiçadas na ponta da língua.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         }
     ],
     [
         {
             descricao: 'Presença de áreas de alopecia (ausência de cabelos) no couro cabeludo, com superfície lisa, múltiplas e de diferentes tamanhos. Não há descamação nem prurido.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Placas mucosas, esbranquiçadas, irregulares, na região de palato mole e duro.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Placa esbranquiçada com superfície irregular, enrugada, indolor, na lateral direita da língua.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Presença de exantema maculopapular localizado no tronco e abdome.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Maculopápulas eritematosas em região palmoplantar.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: `a) Presença de nódulos ulcerados, eritematosos na região anal, que é um local de dobra em mucosa, onde caracteristicamente surgem as lesões denominadas sifílides.<br/>
                         b) abaulamento em região inguinal esquerda, denotando linfadenopatia local, comum na forma secundária da  sífilis.`,
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Pequenas placas arredondadas, caracterizadas por descamação periférica, na região palmo-plantar.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Criança de 3 anos de idade apresentando máculas e pápulas eritematosas na região genital.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Criança de 9 anos de idade apresentando placas vegetantes, de aspecto úmido e superfície lisa na região anal. Sifílides.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Presença de nódulos, alguns ulcerados, outros íntegros, em região genital.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Múltiplas placas vegetantes, formadas por pápulas e nódulos na região anal. Estas lesões são tipicamente indolores, mas neste caso, havia intenso prurido devido à associação com escabiose.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Hiperceratose palmo-plantar, eritematosa e simétrica. Este paciente também apresentava lesões genitais, mas com diferente aspecto: predominantemente pápulo-nodular e ulcerado.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Extensa placa erosiva, iniciando-se desde lábio menor e estendendo-se inferiormente a toda região perianal. Apecto úmido da lesão é notável, tratando-se de sifílide.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: `<strong>Imagem a:</strong> 
@@ -136,66 +136,66 @@ var conteudo = [
                         <br/><strong>Imagem b:</strong> 
                         Melhora importante das lesões, após tratamento adequado.
                         `,
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Presença de máculo-pápulas eritematosas, bem delimitadas, seguindo um padrão predominantemente monomórfico, disseminadas no tronco.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Presença de máculo-pápulas eritematosas, bem delimitadas, seguindo um padrão predominantemente monomórfico, disseminadas no tronco. ',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Grande placa vegetante, exofítica, úmidas, com supefície irregular, na região anal.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Placa esbranquiçada, úmida, indolor, bem definida, na mucosa labial.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Presença de nódulos múltiplos na região genital, todos de aspecto úmido, alguns ulcerados, outros com superfície intacta. Neste caso, há descarga vaginal por presença de infecção concomitante.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Placas eritematosas vegetantes, úmidas, indolores, em região perianal, estendendo-se centrifugamente, denotando a contagiosidade destas lesões. ',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Rarefação de supercílios, mais evidente na região caudal da sobrancelha (madarose). Na sífilis, a madarose é conhecida como ‘Sinal de Fournier”.',
-            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=6965">http://www.atlasdermatologico.com.br/img?imageId=6965</a>'
+            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=6965" target=”_blank”>http://www.atlasdermatologico.com.br/img?imageId=6965</a>'
         },
         {
             descricao: 'Presença de nódulos indolores, eritematosos, sem descamação, na região da barba, que podem facilmente passar despercebidos.',
-            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=7039">http://www.atlasdermatologico.com.br/img?imageId=7039</a>'
+            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=7039" target=”_blank”>http://www.atlasdermatologico.com.br/img?imageId=7039</a>'
         },
         {
             descricao: 'Pápulas eritêmato-escamosas na região cervical, onde podemos perceber  a presença de linfonodomegalias, o que é um achado frequente na sífilis.',
-            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=6970">http://www.atlasdermatologico.com.br/img?imageId=6970</a>'
+            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=6970" target=”_blank”>http://www.atlasdermatologico.com.br/img?imageId=6970</a>'
         },
         {
             descricao: 'Múltiplas pápulas de coloração eritêmato-violácea, muitas coalescendo, deixando um aspecto “infiltrado” na face da paciente. É importante notar que as roséolas sifilíticas ou nódulos sifilíticos podem adquirir uma coloração mais arroxeada em peles mais escuras.',
-            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=8993">http://www.atlasdermatologico.com.br/img?imageId=8993</a>'
+            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=8993" target=”_blank”>http://www.atlasdermatologico.com.br/img?imageId=8993</a>'
         }
     ],
     [
 
         {
             descricao: 'Presença de placas infiltradas, com ulceração e material sero-purulento ao centro.',
-            fonte: '<a href="http://atlasdermatologico.com.br/img?imageId=7086">http://atlasdermatologico.com.br/img?imageId=7086</a>'
+            fonte: '<a href="http://atlasdermatologico.com.br/img?imageId=7086" target=”_blank”>http://atlasdermatologico.com.br/img?imageId=7086</a>'
         },
         {
             descricao: 'Presença de perfuração (fístula) em palato duro, indolor, com leve eritema perilesional.',
-            fonte: '<a href="http://www.tti.library.tcu.edu.tw/DERMATOLOGY/ba/ba0057f.htm">http://www.tti.library.tcu.edu.tw/DERMATOLOGY/ba/ba0057f.htm</a>'
+            fonte: '<a href="http://www.tti.library.tcu.edu.tw/DERMATOLOGY/ba/ba0057f.htm" target=”_blank”>http://www.tti.library.tcu.edu.tw/DERMATOLOGY/ba/ba0057f.htm</a>'
         },
         {
             descricao: 'Presença de grande perfuração (fístula), indolor, em palato duro.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis. Springer, 2017'
+            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
         {
             descricao: 'Placas ulceradas, com bordas bem elevadas e infiltradas, com presença de secreção em seu interior, decorrente da intensa reação inflamatória e necrose tecidual.',
-            fonte: '<a href="http://atlasdermatologico.com.br/img?imageId=7085">http://atlasdermatologico.com.br/img?imageId=7085</a>'
+            fonte: '<a href="http://atlasdermatologico.com.br/img?imageId=7085" target=”_blank”>http://atlasdermatologico.com.br/img?imageId=7085</a>'
         },
     ],
     [
@@ -205,37 +205,37 @@ var conteudo = [
             diagnostico: 'Pitiríase Rósea',
             diagnostico_diferencial: `O padrão “árvore de Natal” que ocorre em alguns casos em dorso sugere o diagnóstico de pitiríase rósea.<br/>
                                         A descamação central das lesões também sugere PR, uma vez que na sífilis a descamação é na periferia das lesões (Colarete de Biet)`,
-            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=5620">http://www.atlasdermatologico.com.br/img?imageId=5620</a>'
+            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=5620" target=”_blank”>http://www.atlasdermatologico.com.br/img?imageId=5620</a>'
         },
         {
             descricao: 'Úlceras dolorosas de base purulenta, bordas eritematosas, amolecidas e escavadas em glande.',
             diagnostico: 'Cancróide',
             diagnostico_diferencial: 'Geralmente na sífilis temos um padrão de lesão única, indolor, de fundo limpo e que regride sem deixar cicatriz.',
-            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=948">http://www.atlasdermatologico.com.br/img?imageId=948</a>'
+            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=948" target=”_blank”>http://www.atlasdermatologico.com.br/img?imageId=948</a>'
         },
         {
             descricao: 'Úlceras de bordas eritematosas e bem delimitadas em região vulvar.',
             diagnostico: 'Herpes Simples',
             diagnostico_diferencial: 'Na Herpes, as úlceras são precedidas por lesões vesiculosas e geralmente recorrentes ',
-            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=2580">http://www.atlasdermatologico.com.br/img?imageId=2580</a>'
+            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=2580" target=”_blank”>http://www.atlasdermatologico.com.br/img?imageId=2580</a>'
         },
         {
             descricao: 'Patches e placas eritematosas, finamente descamativas de tamanhos variáveis em região de abdomen, dorso e mama. ',
             diagnostico: 'Micose Fungóide',
             diagnostico_diferencial: 'Geralmente as lesões da MF se desenvolvem em regiões cobertas do corpo. Com a progressao da doença, as placas se tornam descamativas e infiltradas e crescem de forma gradual, anular policíclica ou em ferradura.',
-            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=4575">http://www.atlasdermatologico.com.br/img?imageId=4575</a>'
+            fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=4575" target=”_blank”>http://www.atlasdermatologico.com.br/img?imageId=4575</a>'
         },
         {
             descricao: 'Pápulas e placas eritematoescamosas, bem definidas em região torácica posterior.',
             diagnostico: 'Psoríase Gutata',
             diagnostico_diferencial: 'Pela curetagem metódica de Brocq, obtem-se dois achados clínicos bastante sugestivos dessa dermatose: sinal da vela (estratificação das escamas) e sinal do orvalho sangrante (pequenos pontos sangrantes quando a escama é removida).',
-            fonte: '<a href="https://upload.wikimedia.org/wikipedia/commons/4/48/Guttate_psoriasis.jpg">https://upload.wikimedia.org/wikipedia/commons/4/48/Guttate_psoriasis.jpg</a>'
+            fonte: '<a href="https://upload.wikimedia.org/wikipedia/commons/4/48/Guttate_psoriasis.jpg" target=”_blank”>https://upload.wikimedia.org/wikipedia/commons/4/48/Guttate_psoriasis.jpg</a>'
         },
         {
             descricao: 'Máculas e pápulas eritematosas disseminadas no corpo.',
             diagnostico: 'Farmacodermia',
             diagnostico_diferencial: 'O início abrupto associado ao uso de fármacos sugerem o diagnóstico.',
-            fonte: '<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Amoxicillin_rash_11_hours_after_17th_dose.JPG/640pxAmoxicillin_rash_11_hours_after_17th_dose.JPG">https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Amoxicillin_rash_11_hours_after_17th_dose.JPG/640pxAmoxicillin_rash_11_hours_after_17th_dose.JPG</a>'
+            fonte: '<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Amoxicillin_rash_11_hours_after_17th_dose.JPG/640pxAmoxicillin_rash_11_hours_after_17th_dose.JPG" target=”_blank”>https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Amoxicillin_rash_11_hours_after_17th_dose.JPG/640pxAmoxicillin_rash_11_hours_after_17th_dose.JPG</a>'
         },
     ]
 ]
@@ -477,7 +477,7 @@ function imprimirQuestoes(lista, texto) {
                     <div class="toast pic-desc desc-`+ i + `" role="alert" aria-live="assertive" aria-atomic="true">
                         <div class="toast-header">
                             <strong class="me-auto"></strong>
-                            <button type="button" class="btn-close" data-bs-dismiss="desc-`+ i + `" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="desc-`+ i + `" aria-label="Close"></button>
                         </div>
                         <div class="toast-body">
                         `
