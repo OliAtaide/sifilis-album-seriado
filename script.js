@@ -446,6 +446,11 @@ function preTeste() {
         }
     });
 
+    pre_teste[3] = questoes[37];
+    pre_teste[4] = questoes[18];
+    pre_teste[8] = questoes[5];
+    pre_teste[9] = questoes[14];
+
     return pre_teste;
 }
 
