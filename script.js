@@ -73,7 +73,7 @@ var conteudo = [
         },
         {
             descricao: 'Presença de úlcera limpa, indolor, bem delimitada, com bordas esbranquiçadas na ponta da língua.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
+            fonte: '<a href="revista.aborj.org.br/index.php/rbo/article/viewFile/38/42" target=”_blank”>revista.aborj.org.br/index.php/rbo/article/viewFile/38/42</a>'
         }
     ],
     [
@@ -138,13 +138,14 @@ var conteudo = [
                         `,
             fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
         },
+
         {
             descricao: 'Presença de máculo-pápulas eritematosas, bem delimitadas, seguindo um padrão predominantemente monomórfico, disseminadas no tronco.',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
+            fonte: '<a href="http://atlasdermatologico.com.br/img?imageId=7033" target=”_blank”>http://atlasdermatologico.com.br/img?imageId=7033</a>'
         },
         {
             descricao: 'Presença de máculo-pápulas eritematosas, bem delimitadas, seguindo um padrão predominantemente monomórfico, disseminadas no tronco. ',
-            fonte: 'PASSOS, Mauro Romero Leal (Ed.). <strong>Atlas of sexually transmitted diseases: clinical aspects and differential diagnosis.</strong> Springer, 2017'
+            fonte: '<a href="http://atlasdermatologico.com.br/img?imageId=7036" target=”_blank”>http://atlasdermatologico.com.br/img?imageId=7036</a>'
         },
         {
             descricao: 'Grande placa vegetante, exofítica, úmidas, com supefície irregular, na região anal.',
@@ -222,7 +223,7 @@ var conteudo = [
         {
             descricao: 'Patches e placas eritematosas, finamente descamativas de tamanhos variáveis em região de abdomen, dorso e mama. ',
             diagnostico: 'Micose Fungóide',
-            diagnostico_diferencial: 'Geralmente as lesões da MF se desenvolvem em regiões cobertas do corpo. Com a progressao da doença, as placas se tornam descamativas e infiltradas e crescem de forma gradual, anular policíclica ou em ferradura.',
+            diagnostico_diferencial: 'Geralmente as lesões da MF se desenvolvem em regiões cobertas do corpo. Com a progressão da doença, as placas se tornam descamativas e infiltradas e crescem de forma gradual, anular policíclica ou em ferradura.',
             fonte: '<a href="http://www.atlasdermatologico.com.br/img?imageId=4575" target=”_blank”>http://www.atlasdermatologico.com.br/img?imageId=4575</a>'
         },
         {
