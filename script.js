@@ -425,7 +425,7 @@ function alerta(index, texto, bool) {
         color = 'text-danger';
     }
     $('.alternativas-questao-' + index).prepend(
-        '<span class="'
+        '<span class="alerta '
         + color +
         ' fw-bold mb-3">'
         + texto +
@@ -570,6 +570,17 @@ function enviarRespostas(questoes, err_msg, ok_msg) {
             </h5>
         </div>`
     )
+}
+
+function restart(){
+    $('.form-check-input').prop("disabled", false);
+    $('.alerta, .resultado').remove();
+    console.log($('.wrong'));
+    $('.right, .wrong').addClass('radio-button');
+    $('.right, .wrong').removeClass('checked');
+    $('.unchecked').removeClass('unchecked');
+    $('.wrong').removeClass('wrong');
+    $('.right').removeClass('right');
 }
 
 function onChange() {
