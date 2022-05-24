@@ -528,6 +528,7 @@ function imprimirQuestoes(lista, texto) {
 
 
 function enviarRespostas(questoes, err_msg, ok_msg) {
+    respondeuTodas = true;
     window.scrollTo(0, 0);
     $(".form-check-input").prop("disabled", true);
     var erros = 0, acertos = 0;
@@ -554,8 +555,6 @@ function enviarRespostas(questoes, err_msg, ok_msg) {
                 vl.addClass("checked");
 
                 alerta(i, err_msg, false);
-
-                respondeuTodas = true;
             }
             else {
                 respondeuTodas = false;
