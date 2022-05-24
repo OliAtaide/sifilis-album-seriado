@@ -554,6 +554,8 @@ function enviarRespostas(questoes, err_msg, ok_msg) {
                 vl.addClass("checked");
 
                 alerta(i, err_msg, false);
+
+                respondeuTodas = true;
             }
             else {
                 respondeuTodas = false;
