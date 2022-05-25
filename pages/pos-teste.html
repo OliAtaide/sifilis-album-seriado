@@ -48,13 +48,24 @@
             <button class="pos-teste btn px-auto px-md-5 my-3 text-white fw-bold">
                 Repetir pós-teste
             </button>
-            <a href="unidade.html" class="acessar-unidade btn px-auto px-md-5 my-3 text-white fw-bold">
+            <button class="acessar-unidade btn px-auto px-md-5 my-3 text-white fw-bold">
                 Acessar Unidade
-            </a>
-            <a href="referencias.html" class="referencias btn px-auto px-md-5 my-3 text-white fw-bold">
+            </button>
+            <button class="referencias btn px-auto px-md-5 my-3 text-white fw-bold">
                 Avançar
                 <i class="bi bi-chevron-right"></i>
-            </a>
+            </button>
+        </div>
+        <div class="position-fixed bottom-0 end-0 d-flex justify-content-center align-items-center w-100"
+            style="z-index: 11">
+            <div id="liveToast" class="toast alert alert-danger border-1 border-danger alert-dismissible" role="alert"
+                aria-live="assertive" aria-atomic="true">
+
+                <div class="toast-body">
+                    O sistema só permitirá acessar a unidade após a realização do pré-teste.
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
         </div>
     </div>
     <nav class="footer d-flex justify-content-center py-2">
@@ -76,6 +87,30 @@
     // var respostas = ["a", "c", "b", "b", "a", "a", "b", "c", "b", "c"];
     var err_msg = "Opção incorreta! Que tal acessar novamente o conteúdo das unidades?";
     var ok_smg = "Opção correta! Parabéns!";
+
+    $('.acessar-unidade').click(
+        function () {
+            if (respondeuTodas) {
+                window.location.href = "unidade.html";
+            }
+            else {
+                var toast = new bootstrap.Toast($('#liveToast'));
+                toast.show();
+            }
+        }
+    );
+
+    $('.referencias').click(
+        function () {
+            if (respondeuTodas) {
+                window.location.href = "referencias.html";
+            }
+            else {
+                var toast = new bootstrap.Toast($('#liveToast'));
+                toast.show();
+            }
+        }
+    );
 
     $(".enviar-respostas").click(function () {
         $(this).hide();
