@@ -399,6 +399,7 @@ var questoes = [
 var respondeuTodas = true;
 
 function showFeedback(questoes) {
+    $('.feedback').remove();
     for (let i = 0; i < questoes.length; i++) {
         var fb;
         switch (questoes[i].resposta) {
@@ -412,7 +413,7 @@ function showFeedback(questoes) {
                 fb = feedback.c;
                 break;
         }
-        $('.alternativas-questao-' + (i + 1)).append('<span class="mt-3"><small><strong>Feedback: </strong>' + fb + '</strong></span>');
+        $('.alternativas-questao-' + (i + 1)).append('<span class="feedback mt-3"><small><strong>Feedback: </strong>' + fb + '</strong></span>');
     }
 }
 
@@ -528,6 +529,8 @@ function imprimirQuestoes(lista, texto) {
 
 
 function enviarRespostas(questoes, err_msg, ok_msg) {
+    $('.resultado').remove();
+    
     respondeuTodas = true;
     window.scrollTo(0, 0);
     $(".form-check-input").prop("disabled", true);
@@ -576,7 +579,6 @@ function enviarRespostas(questoes, err_msg, ok_msg) {
 function restart(){
     $('.form-check-input').prop("disabled", false);
     $('.alerta, .resultado').remove();
-    console.log($('.wrong'));
     $('.right, .wrong').addClass('radio-button');
     $('.right, .wrong').removeClass('checked');
     $('.unchecked').removeClass('unchecked');
@@ -616,7 +618,6 @@ function format(num) {
 }
 
 function imprimirUnidade() {
-    console.log(conteudo);
     for (let i = 0; i < conteudo.length; i++) {
         for (let j = 0; j < conteudo[i].length; j++) {
             $('.slide-' + (i + 1)).append(
@@ -649,9 +650,7 @@ function imprimirUnidade() {
 
 $(document).on('click', '.pic img', function () {
     $('.pic-desc').fadeOut();
-    console.log('SUCCESS');
     var toast = $(this).data('toast');
-    console.log(toast);
     $('.' + toast).fadeIn();
 })
 
