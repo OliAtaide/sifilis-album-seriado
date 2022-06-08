@@ -399,7 +399,6 @@ var questoes = [
 var respondeuTodas = true;
 
 function showFeedback(questoes) {
-    $('.feedback').remove();
     for (let i = 0; i < questoes.length; i++) {
         var fb;
         switch (questoes[i].resposta) {
@@ -529,8 +528,6 @@ function imprimirQuestoes(lista, texto) {
 
 
 function enviarRespostas(questoes, err_msg, ok_msg) {
-    $('.resultado').remove();
-    
     respondeuTodas = true;
     window.scrollTo(0, 0);
     $(".form-check-input").prop("disabled", true);
@@ -574,16 +571,6 @@ function enviarRespostas(questoes, err_msg, ok_msg) {
             </h5>
         </div>`
     )
-}
-
-function restart(){
-    $('.form-check-input').prop("disabled", false);
-    $('.alerta, .resultado').remove();
-    $('.right, .wrong').addClass('radio-button');
-    $('.right, .wrong').removeClass('checked');
-    $('.unchecked').removeClass('unchecked');
-    $('.wrong').removeClass('wrong');
-    $('.right').removeClass('right');
 }
 
 function onChange() {
