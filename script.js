@@ -3,7 +3,7 @@ var feedback = {
     Essa fase é caracterizada pela presença da lesão inicial da sífilis primária que é denominada cancro duro ou protossifiloma. 
     Surge, em média, 3 semanas após a infecção, podendo, inclusive, não aparecer ou surgir após um período maior, em torno de 40 dias.
     Em 15% a 30% dos casos, o cancro não é percebido pelo paciente ou pode ser atípico.
-    Caracteriza-se por ser indolor, único, erosado, de fundo limpo, ou com pouca serosidade, avermelhado, com base e bordas endurecidas`,
+    Caracteriza-se por ser indolor, único, erosado, de fundo limpo, ou com pouca serosidade, avermelhado, com base e bordas endurecidas.`,
 
     b: `Manifestações Dermatológicas da Sífilis Secundária.
     Essa fase é caracterizada pela disseminação de treponemas pelo organismo.
