@@ -73,7 +73,7 @@ var conteudo = [
         },
         {
             descricao: 'Presença de úlcera limpa, indolor, bem delimitada, com bordas esbranquiçadas na ponta da língua.',
-            fonte: '<a href="revista.aborj.org.br/index.php/rbo/article/viewFile/38/42" target=”_blank”>revista.aborj.org.br/index.php/rbo/article/viewFile/38/42</a>'
+            fonte: '<a href="https://revista.aborj.org.br/index.php/rbo/article/viewFile/38/42" target=”_blank”>revista.aborj.org.br/index.php/rbo/article/viewFile/38/42</a>'
         }
     ],
     [
